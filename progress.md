@@ -19,12 +19,18 @@
     - Implemented `/api/test-auth` API route for verifying auth sessions.
     - Implemented `/api/test-insert` API route to verify authenticated database writes.
     - Implemented `/api/test-fetch` API route to verify RLS fetching and joins.
+  - **Git & Deployment**:
+    - Initialized local Git repository and created initial commit.
+    - Configured remote origin: `https://github.com/Vikranth-The-Great/Desisionlog.git`.
+    - Local project is ready for push and Vercel deployment.
 - **Issues**
-  - **Blocked**: Unauthorized access to Supabase via MCP server (for DDL/RLS tasks).
+  - **Blocked**: Unauthorized access to Supabase via MCP server.
+  - **Action Required**: User must perform initial `git push` to GitHub and configure Vercel environment variables.
 - **Tests**
-  - Verified Supabase client initialization logic.
+  - Verified `.gitignore` prevents `.env.local` leakage.
 - **Next Actions**
-  - Connect to Supabase and create tables/policies once MCP authorization is fixed.
+  - User to push to GitHub and deploy to Vercel.
+  - Verify API routes in the preview environment.
 
 ---
 
