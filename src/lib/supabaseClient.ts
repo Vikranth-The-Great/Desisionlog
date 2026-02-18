@@ -1,0 +1,24 @@
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+if (!supabaseUrl || !supabaseAnonKey) {
+    console.warn('Supabase URL or Anon Key is missing in environment variables.');
+}
+
+/**
+ * Singleton instance of the Supabase client.
+ * Enforces a single connection across the application.
+ */
+export const supabase = createClient(
+    supabaseUrl || '',
+    supabaseAnonKey || ''
+);
+
+// Connection test
+if (typeof window !== 'undefined') {
+    console.log('Supabase client initialized successfully on the client.');
+} else {
+    console.log('Supabase client initialized successfully on the server.');
+}
