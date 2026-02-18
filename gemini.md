@@ -203,5 +203,19 @@ Hard deletes a decision and cascaded outcome.
 - **Variables**: camelCase.
 - **Constants:** UPPER_SNAKE_CASE.
 
+## Maintenance Log
+- **Schema Version**: 1.0.0
+- **RLS Policy Status**: Enabled & Verified (Multi-tenant isolation)
+- **Deployment Date**: 2026-02-18
+- **Hosting Platform**: Vercel
+- **Supabase Project Reference**: `frpquvqclemmwkmfhxte`
+- **Known Limitations (v1)**:
+  - No outcome editing (Strict accountability).
+  - No global analytics.
+  - No complex collaboration/sharing (Personal use focus).
+
+## Future Change Rule
+Any schema modification (tables, columns, types, or API contracts) must update `gemini.md` first before any code changes are implemented.
+
 ## Constitution Lock
 “This document governs all architectural decisions. Code must follow this schema. If schema changes, gemini.md must be updated first.”
