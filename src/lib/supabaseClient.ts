@@ -15,10 +15,3 @@ export const supabase = createClient(
     supabaseUrl || '',
     supabaseAnonKey || ''
 );
-
-// Connection test
-if (typeof window !== 'undefined') {
-    console.log('Supabase client initialized successfully on the client.');
-} else {
-    console.log('Supabase client initialized successfully on the server.');
-}

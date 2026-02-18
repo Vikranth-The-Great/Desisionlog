@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-02-18T13:07:47.801Z",
+  "results": [
+    {
+      "name": "User Isolation (Unauthenticated Fetch)",
+      "status": "pass",
+      "passed": true,
+      "msg": "Could not find the table 'public.decisions' in the schema cache"
+    },
+    {
+      "name": "Fake User ID Injection",
+      "status": "pass",
+      "passed": true,
+      "msg": "Could not find the table 'public.decisions' in the schema cache"
+    },
+    {
+      "name": "Ownership (Cross-User Outcome)",
+      "status": "pass",
+      "passed": true,
+      "msg": "Could not find the table 'public.outcomes' in the schema cache"
+    },
+    {
+      "name": "Immutability (Decision Update)",
+      "status": "pass",
+      "passed": true,
+      "msg": "Could not find the table 'public.decisions' in the schema cache"
+    }
+  ]
+}
